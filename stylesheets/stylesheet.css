@@ -3,6 +3,10 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+/* Header layout with 3 items in a flex container, in column. 
+Shrink in smaller screens until 256px
+360px change layout to row*/
+
 header {
   display: flex;
   justify-content: space-between;
@@ -11,6 +15,7 @@ header {
   flex: 1 1 auto;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  min-width: 256px;
 }
 
 header > div {
@@ -36,6 +41,7 @@ header div p {
 #logo {
   width: 200px;
   border-radius: 50%;
+  margin: 10px;
 }
 
 header nav {
@@ -75,4 +81,17 @@ main sidebar {
 
 footer {
   border: solid grey;
+}
+
+@media (max-width: 379px) {
+  header {
+    justify-content: center;
+  }
+  header > div {
+    flex-direction: column;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
 }
