@@ -77,15 +77,28 @@ main {
   margin: 10px;
   display: grid;
   grid-template-columns: 2.5fr 1.5fr;
+  grid-template-areas:
+    "a b"
+    "c b";
   gap: 15px;
   border: solid grey;
 }
 
 main section {
   border: solid orange;
+  padding: 30px;
+  text-align: center;
+}
+
+#section1 {
+  grid-area: a;
+}
+#section2 {
+  grid-area: c;
 }
 
 main sidebar {
+  grid-area: b;
   border: solid orange;
 }
 
