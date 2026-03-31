@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
 }
 
 /* Header layout with 3 items in a flex container, in column. 
@@ -10,7 +11,13 @@ Shrink in smaller screens until 256px
 header {
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(to bottom, black, red);
+  background: linear-gradient(
+    135deg,
+    #06060b 0%,
+    #10101e 40%,
+    #3a0f0f 70%,
+    #ff3c1f 100%
+  );
   color: antiquewhite;
   flex: 1 1 auto;
   flex-wrap: wrap;
@@ -64,9 +71,12 @@ header nav a:active {
   color: rgb(157, 37, 37);
 }
 
+/* Section for main information with a sidebar photo */
+
 main {
+  margin: 10px;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2.5fr 1.5fr;
   gap: 15px;
   border: solid grey;
 }
@@ -77,6 +87,13 @@ main section {
 
 main sidebar {
   border: solid orange;
+}
+
+main sidebar img {
+  /*img contained inside container*/
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 footer {
