@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+form {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid steelblue;
+}
+
+input,
+textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  width: 90%;
+}
+
+label {
+  display: block;
+  margin: 10px auto;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 0.5rem 1rem;
+  width: 100px;
+  background-color: rgb(36, 68, 94);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  background-color: rgb(133, 16, 16);
+}

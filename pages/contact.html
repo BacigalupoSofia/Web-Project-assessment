@@ -4,25 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css" />
+    <link rel="stylesheet" href="../stylesheets/contact.css" />
   </head>
 
   <body>
+    <header>
+      <div>
+        <img
+          src="../images/logo-eevm.jpg"
+          id="logo"
+          alt="Vina del Mar fencing club logo"
+        />
+        <div>
+          <h1>EEVM</h1>
+          <p>Escuela de Esgrima</p>
+          <p>Viña del Mar</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#">About Us</a>
+        <a href="#">Membership</a>
+        <a href="#">Timetable</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
     <form method="post" action="#">
       <fieldset>
         <legend>Contact Us</legend>
 
         <label for="name">Full name:</label>
-        <input type="text" id="name" />
+        <input
+          type="text"
+          id="name"
+          pattern="[A-Za-z ]+"
+          placeholder="Write your full name here"
+        />
 
         <label for="phone-number">Phone number:</label>
-        <input type="number" placeholder="(08)12345678" />
+        <input type="number" placeholder="(08)12345678" required />
 
         <label for="email">Email address:</label>
-        <input type="email" id="email" placeholder="example@email.com" />
+        <input
+          type="email"
+          id="email"
+          placeholder="example@email.com"
+          aria-describedby="emailHelp"
+          required
+        />
+        <small id="emailHelp"
+          >We'll never share your email with anyone else.</small
+        >
 
         <label for="message">Message:</label>
-        <textarea id="message" rows="5" cols="50"></textarea>
+        <textarea
+          id="message"
+          rows="5"
+          cols="50"
+          placeholder="Enter your message here ..."
+          required
+        ></textarea>
       </fieldset>
+      <button type="submit">Send</button>
     </form>
+
+    <footer>FOOTER</footer>
   </body>
 </html>
