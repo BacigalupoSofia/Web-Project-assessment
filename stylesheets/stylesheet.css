@@ -8,7 +8,8 @@
 Shrink in smaller screens until 256px
 360px change layout to row*/
 
-header {
+header,
+footer {
   display: flex;
   justify-content: space-between;
   background: linear-gradient(
@@ -21,8 +22,12 @@ header {
   color: antiquewhite;
   flex: 1 1 auto;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+
   min-width: 256px;
+}
+
+header {
+  margin-bottom: 40px;
 }
 
 header > div {
@@ -82,11 +87,9 @@ main {
     "a b"
     "c b";
   gap: 15px;
-  border: solid grey;
 }
 
 main section {
-  border: solid orange;
   padding: 30px;
   text-align: center;
 }
@@ -94,24 +97,47 @@ main section {
 #section1 {
   grid-area: a;
 }
+
+#section1 h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#section1 p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
 #section2 {
   grid-area: c;
 }
 
+#section2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#section2 li {
+  margin-bottom: 10px;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 main sidebar {
   grid-area: b;
-  border: solid orange;
 }
 
 main sidebar img {
   /*img contained inside container*/
-  max-width: 100%;
   height: auto;
-  object-fit: contain;
-}
-
-footer {
-  border: solid grey;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 379px) {
@@ -124,5 +150,22 @@ footer {
 
   header nav {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 968px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+  }
+}
+
+@media (max-width: 890px) {
+  #section2 ul {
+    flex-direction: column;
+    align-items: center;
   }
 }
