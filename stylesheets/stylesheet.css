@@ -49,6 +49,7 @@ header div p {
   width: 200px;
   border-radius: 50%;
   margin: 10px;
+  padding-left: 25px;
 }
 
 header nav {
