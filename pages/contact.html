@@ -31,45 +31,49 @@
       </nav>
     </header>
 
-    <form method="post" action="#">
-      <fieldset>
-        <legend>Contact Us</legend>
+    <h2>Get in touch with us and start your fencing journey!</h2>
+    <div id="contact-form">
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Contact Us</legend>
 
-        <label for="name">Full name:</label>
-        <input
-          type="text"
-          id="name"
-          pattern="[A-Za-z ]+"
-          placeholder="Write your full name here"
-        />
+          <label for="name">Full name:</label>
+          <input
+            type="text"
+            id="name"
+            pattern="[A-Za-z ]+"
+            placeholder="Write your full name here"
+          />
 
-        <label for="phone-number">Phone number:</label>
-        <input type="number" placeholder="(08)12345678" required />
+          <label for="phone-number">Phone number:</label>
+          <input type="number" placeholder="(08)12345678" required />
 
-        <label for="email">Email address:</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="example@email.com"
-          aria-describedby="emailHelp"
-          required
-        />
-        <small id="emailHelp"
-          >We'll never share your email with anyone else.</small
-        >
+          <label for="email">Email address:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="example@email.com"
+            aria-describedby="emailHelp"
+            required
+          />
+          <small id="emailHelp"
+            >We'll never share your email with anyone else.</small
+          >
 
-        <label for="message">Message:</label>
-        <textarea
-          id="message"
-          rows="5"
-          cols="50"
-          placeholder="Enter your message here ..."
-          required
-        ></textarea>
-      </fieldset>
-      <button type="submit">Send</button>
-    </form>
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            rows="5"
+            cols="50"
+            placeholder="Enter your message here ..."
+            required
+          ></textarea>
+        </fieldset>
+        <button type="submit">Send</button>
+      </form>
 
+      <img src="../images/fencing front.png" alt="two people fencing" />
+    </div>
     <footer>FOOTER</footer>
   </body>
 </html>

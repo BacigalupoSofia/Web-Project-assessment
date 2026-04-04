@@ -2,6 +2,17 @@
   box-sizing: border-box;
 }
 
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+body > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body,
 input,
 textarea,
@@ -13,9 +24,9 @@ button {
 
 form {
   max-width: 800px;
-  margin: auto;
   padding: 20px;
   border: 1px solid steelblue;
+  margin-right: 20px;
 }
 
 input,
@@ -47,4 +58,15 @@ button {
 
 button:hover {
   background-color: rgb(133, 16, 16);
+}
+
+body img {
+  max-width: 600px;
+  padding: 20px;
+}
+
+@media (max-width: 823px) {
+  body > div {
+    flex-direction: column;
+  }
 }
