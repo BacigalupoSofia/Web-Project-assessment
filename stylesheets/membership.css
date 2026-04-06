@@ -1,0 +1,68 @@
+body > main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  align-items: space-between;
+  padding: 20px;
+}
+
+body main > div {
+  flex: 3;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 1rem 2rem;
+  border: solid rgb(5, 3, 33) 2px;
+  background: linear-gradient(
+    135deg,
+    #06060b 0%,
+    #10101e 40%,
+    #3a0f0f 70%,
+    #ff3c1f 100%
+  );
+  color: antiquewhite;
+  text-align: center; 
+}
+
+main sidebar img {
+  height: 100%;
+  width: 180px;
+  object-fit: cover;
+  flex: 1;
+  border-radius: 0;
+}
+
+table caption {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  
+}
+
+table th,
+table td {
+  border: 1px solid #3a0f0f;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+    main sidebar img {
+        display: none;
+    }
