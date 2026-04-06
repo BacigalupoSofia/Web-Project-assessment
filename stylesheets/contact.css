@@ -65,6 +65,28 @@ body img {
   padding: 20px;
 }
 
+#address {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "viña reñaca";
+  gap: 20px;
+}
+
+#address h3 {
+  grid-area: title;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#vina {
+  grid-area: viña;
+}
+
+#renaca {
+  grid-area: reñaca;
+}
+
 @media (max-width: 823px) {
   body > div {
     flex-direction: column;
