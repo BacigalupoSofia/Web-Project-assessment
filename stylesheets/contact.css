@@ -79,11 +79,15 @@ body img {
   margin-bottom: 20px;
 }
 
+#address h2 {
+  justify-self: start;
+}
+
 #vina {
   grid-area: viña;
 }
 
-#renaca {
+#renaca{
   grid-area: reñaca;
 }
 
@@ -91,4 +95,10 @@ body img {
   body > div {
     flex-direction: column;
   }
+  #address {
+ 
+  grid-template-areas:
+    "title title"
+    "viña viña"
+    "reñaca reñaca";
 }

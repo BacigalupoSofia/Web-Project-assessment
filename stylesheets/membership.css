@@ -1,3 +1,6 @@
+/* Stylesheet for the membership page, the main content area is a flex container in rows, 
+tables in the center and photos on the sides that disapear in small screens */
+
 body > main {
   display: flex;
   min-height: 100vh;
@@ -6,11 +9,7 @@ body > main {
   padding: 20px;
 }
 
-body main > div {
-  flex: 3;
-}
-
-h2 {
+main h2 {
   text-align: center;
   margin-bottom: 20px;
 }
