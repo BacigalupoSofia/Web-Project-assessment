@@ -62,7 +62,7 @@ button:hover {
 
 body img {
   max-width: 600px;
-  padding: 20px;
+  margin: 30px;
 }
 
 #address {
@@ -70,8 +70,15 @@ body img {
   grid-template-areas:
     "title title"
     "viña reñaca";
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+
+#address img {  
+ max-width: 100%;
+width: 400px;
+}
+  
 
 #address h3 {
   grid-area: title;
@@ -89,6 +96,12 @@ body img {
 
 #renaca{
   grid-area: reñaca;
+}
+
+#vina p, #renaca p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  justify-self: center;
 }
 
 @media (max-width: 823px) {
