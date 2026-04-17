@@ -21,7 +21,6 @@ footer {
   color: antiquewhite;
   flex: 1 1 auto;
   flex-wrap: wrap;
-  min-width: 256px;
 }
 
 header {
@@ -58,13 +57,12 @@ header div p {
 }
 
 header nav {
-  align-content: end;
   padding-right: 1rem;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-top: 100px;
 }
 
 header nav a {
-  margin: 10px;
   padding: 10px;
   text-decoration: none;
   cursor: pointer;
@@ -180,22 +178,17 @@ main sidebar img {
 
 footer {
   height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
-@media (max-width: 379px) {
-  header {
-    justify-content: center;
-  }
-  header > div {
-    flex-direction: column;
-  }
-
-  header nav {
-    margin-top: 10px;
-  }
+footer p {
+  font-size: 18px;
+  margin: auto;
 }
 
-@media (max-width: 968px) {
+@media (max-width: 769px) {
   main {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -203,21 +196,68 @@ footer {
       "b"
       "c";
   }
-}
 
-@media (max-width: 890px) {
+  header nav {
+    margin-left: auto;
+    margin-top: 10px;
+  }
+
   #section2 ul {
     flex-direction: column;
     align-items: center;
   }
+
   #section2 li img {
-    width: 400px;
-    height: 400px;
-    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     object-fit: cover;
     margin-bottom: 10px;
   }
+  #section2 li {
+    gap: 10px;
+    overflow: hidden;
+  }
   #section2 li h3 {
-    min-height: 36px;
+    min-height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 426px) {
+  body {
+    min-width: 100%;
+  }
+  header {
+    justify-content: center;
+    flex-direction: column;
+  }
+  header > div {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  header nav {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  header nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #section2 ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #section2 li img {
+    width: 100%;
+    max-width: 400px;
   }
 }
