@@ -6,6 +6,8 @@ h2 {
   text-align: center;
   margin-top: 20px;
   padding: 20px;
+  font-family: "quintessential", cursive;
+  font-size: 40px;
 }
 body > div {
   display: flex;
@@ -72,6 +74,7 @@ body img {
     "viña reñaca";
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  justify-items: center;
 }
 
 #address img {  
