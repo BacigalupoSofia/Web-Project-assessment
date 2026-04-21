@@ -10,8 +10,11 @@ body > main {
 }
 
 main h2 {
+  font-family: "quintessential", cursive;
   text-align: center;
   margin-bottom: 20px;
+  font-size: 40px;
+  word-spacing: 0.1rem;
 }
 
 main h3 {
@@ -59,6 +62,11 @@ table td {
   border: 1px solid #3a0f0f;
   padding: 10px;
   text-align: center;
+}
+
+table th {
+  background-color: gray;
+  color: white;
 }
 
 @media (max-width: 768px) {
