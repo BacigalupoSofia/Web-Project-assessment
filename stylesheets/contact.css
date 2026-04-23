@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 h2 {
   text-align: center;
   margin-top: 20px;
@@ -25,9 +30,12 @@ button {
 }
 
 form {
-  max-width: 800px;
+  flex: 1;
   padding: 20px;
-  margin-right: 20px;
+}
+
+#contact-form {
+  margin: 60px;
 }
 
 legend {
@@ -53,23 +61,29 @@ label {
 
 button {
   display: block;
-  margin: 10px auto;
-  padding: 0.5rem 1rem;
-  width: 100px;
-  background-color: rgb(36, 68, 94);
-  color: white;
+  padding: 1rem 4rem;
+  background: radial-gradient(#06060b 0%, #10101e 10%, #8c1414 100%);
+  color: antiquewhite;
   border: none;
   cursor: pointer;
   border-radius: 0.5rem;
+  margin-top: 35px;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 35px auto 0 auto;
 }
 
 button:hover {
-  background-color: rgb(133, 16, 16);
+  background: radial-gradient(#8c1414 0%, #10101e 10%, #06060b 100%);
+  color: red;
 }
 
 body img {
-  max-width: 600px;
+  max-width: 100%;
+  height: auto;
   margin: 30px;
+  flex-shrink: 1;
+  border-radius: 0.5rem;
 }
 
 #address {
@@ -82,11 +96,10 @@ body img {
   justify-items: center;
 }
 
-#address img {  
- max-width: 100%;
-width: 400px;
+#address img {
+  width: 100%;
+  height: auto;
 }
-  
 
 #address h3 {
   grid-area: title;
@@ -102,24 +115,51 @@ width: 400px;
   grid-area: viña;
 }
 
-#renaca{
+#renaca {
   grid-area: reñaca;
 }
 
-#vina p, #renaca p {
+#vina p,
+#renaca p {
   font-size: 18px;
   margin-bottom: 10px;
   justify-self: center;
 }
 
-@media (max-width: 823px) {
+@media (max-width: 769px) {
   body > div {
     flex-direction: column;
   }
+
+  body img {
+    max-width: 100%;
+  }
+
   #address {
- 
-  grid-template-areas:
-    "title title"
-    "viña viña"
-    "reñaca reñaca";
+    grid-template-areas:
+      "title title"
+      "viña viña"
+      "reñaca reñaca";
+  }
+}
+
+@media (max-width: 426px) {
+  #contact-form {
+    margin: 10px;
+  }
+
+  #address {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "viña"
+      "reñaca";
+    gap: 20px;
+    padding: 20px;
+  }
+
+  #address img {
+    width: 100%;
+    margin: 0 auto;
+  }
 }

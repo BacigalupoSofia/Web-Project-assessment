@@ -128,6 +128,11 @@ main section {
   text-decoration: none;
 }
 
+#Get-started-btn:hover {
+  background: radial-gradient(#8c1414 0%, #10101e 10%, #06060b 100%);
+  color: red;
+}
+
 #section2 {
   grid-area: c;
 }

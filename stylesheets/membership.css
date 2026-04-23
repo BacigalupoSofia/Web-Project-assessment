@@ -1,11 +1,17 @@
 /* Stylesheet for the membership page, the main content area is a flex container in rows, 
 tables in the center and photos on the sides that disapear in small screens */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body > main {
   display: grid;
   min-height: 100vh;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-areas: "a b c";
+  overflow-x: hidden;
 }
 
 .side {
@@ -76,11 +82,9 @@ table th {
 @media (max-width: 768px) {
   body > main {
     grid-template-columns: 1fr 2fr;
-    grid-template-areas: "a" "b";
   }
   .right {
     display: none;
-    background-size: cover;
   }
 }
 
