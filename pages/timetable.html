@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fencing School Vina del Mar</title>
-    <link href="stylesheets/stylesheet.css" rel="stylesheet" />
+    <link href="../stylesheets/stylesheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../stylesheets/timetable.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +18,7 @@
     <header>
       <div>
         <img
-          src="images/logo-eevm.jpg"
+          src="../images/logo-eevm.jpg"
           id="logo"
           alt="Vina del Mar fencing club logo"
         />
@@ -29,14 +30,91 @@
       </div>
 
       <nav>
-        <a href="#">About Us</a>
-        <a href="pages/membership.html">Membership</a>
-        <a href="pages/timetable.html">Timetable</a>
-        <a href="pages/contact.html">Contact</a>
+        <a href="../index.html">About Us</a>
+        <a href="../pages/membership.html">Membership</a>
+        <a href="../pages/timetable.html">Timetable</a>
+        <a href="../pages/contact.html">Contact</a>
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <section>
+        <h2>Timetable</h2>
+        <p>Our training sessions are held at the following times:</p>
+      </section>
+
+      <!-- Two sections with the timetable for each training center, with a heading image on one side and a table with the days and times on the other side. -->
+      <section class="timetable">
+        <div> 
+            <img
+            src="../images/sucursal-vina-times.png"
+            alt="vina del mar training center heading"
+          />
+        </div>
+        <div>
+          <table>
+            <caption> Kids Training </caption>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>6:00 PM - 7:00 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>12:10PM - 1:40 PM</td>
+            </tr>
+          </table>
+          <table>
+            <caption> Adult Training (+12 years old) </caption>
+
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>8:00 PM - 9:30 PM</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>20:00PM - 21:30 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>1:40PM - 3:40 PM</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+        <section class="timetable">
+            <div> 
+                <img
+            src="../images/sucursal-reñaca-times.png"
+            alt="renaca training center heading"/>
+            </div>
+            <div>
+          <table>
+            <caption> Renaca Training (+12 years old only)</caption>
+              <th>Day</th>
+              <th>Time</th>
+    
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>7:30 PM - 9:00 PM</td>
+              
+            </tr>
+           
+          </table> 
+        </div>
+      </section>
+
+      <p>Please <span> <a href="../pages/contact.html">contact us</a> </span> for more information or to schedule a visit!</p>
+    </main>
 
     <footer>
       <h3>Fencing School Vina del Mar</h3>

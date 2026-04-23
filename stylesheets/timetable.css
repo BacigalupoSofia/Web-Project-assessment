@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "quintessential", cursive;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 20px;
+}
+
+.timetable {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(17, 11, 70, 0.087);
+}
+
+.timetable div {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  border: 1px solid black;
+}
+
+table caption {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+table td {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  color: black;
+}
+
+table th {
+  background-color: #191548;
+  padding: 10px;
+  border: 1px solid black;
+  color: white;
+}
+
+main > p {
+  text-align: center;
+  font-size: 25px;
+  margin: 50px auto;
+}
+
+span a {
+  color: #191548;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+span a:hover {
+  text-decoration: underline;
+  color: red;
+}
