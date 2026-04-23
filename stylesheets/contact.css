@@ -27,8 +27,13 @@ button {
 form {
   max-width: 800px;
   padding: 20px;
-  border: 1px solid steelblue;
   margin-right: 20px;
+}
+
+legend {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 input,

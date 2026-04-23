@@ -80,3 +80,9 @@ span a:hover {
   text-decoration: underline;
   color: red;
 }
+
+@media (max-width: 426px) {
+  .timetable {
+    flex-direction: column;
+  }
+}
