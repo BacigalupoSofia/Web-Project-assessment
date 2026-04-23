@@ -104,7 +104,7 @@ main section {
   grid-area: a;
 }
 
-#section1 h3 {
+#section1 h2 {
   font-size: 40px;
   margin-bottom: 20px;
   font-family: "quintessential", cursive;
@@ -116,14 +116,16 @@ main section {
 }
 
 #Get-started-btn {
+  display: inline-block;
   padding: 1rem 2rem;
   background: radial-gradient(#06060b 0%, #10101e 10%, #8c1414 100%);
   color: antiquewhite;
   border: none;
   cursor: pointer;
   border-radius: 0.5rem;
-  margin-top: 20px;
+  margin-top: 35px;
   font-size: 20px;
+  text-decoration: none;
 }
 
 #section2 {
@@ -164,11 +166,11 @@ main section {
   margin-top: 20px;
 }
 
-main sidebar {
+#side-img {
   grid-area: b;
 }
 
-main sidebar img {
+#side-img img {
   /*img contained inside container*/
   height: auto;
   object-fit: cover;
